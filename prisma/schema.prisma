@@ -16,9 +16,10 @@ datasource db {
 
 model Book {
   id Int @id @default(autoincrement())
-  title String
-  author String
-  publisher String
+  title String?
+  author String?
+  publisher String?
+  image_url String?
 
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
